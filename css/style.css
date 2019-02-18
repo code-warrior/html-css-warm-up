@@ -12,6 +12,27 @@ h2{
    font-size: 1.5em;
    padding:10px;
 }
+ol{
+   padding:10px;
+}
 li{
+   padding:5px;
+}
+p{
+   margin-top:1em;
+   margin-bottom:1em;
+   text-indent: 1em;
+}
+.alina{
+   width:70%;
+   margin-left: auto;
+   margin-right: auto;
+   display:block;
+}
+.quote{
+   font-style: italic;
+}
+.quotebg{
+   background-color:#ffeada;
    padding:5px;
 }
