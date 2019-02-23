@@ -1,11 +1,16 @@
 body{
+   background-image:url(http://thelistenersclub.timothyjuddviolin.com/wp-content/uploads/sites/2/2016/07/Arvo-P%C3%A4rt.jpg);
+   background-attachment: fixed;
+   background-size:cover;
    margin:5em;
+   font-family: 'Abel';
    font-size:1em;
    line-height: normal;
    text-align: left;
 }
 h1{
-   font-size: 2em;
+   font-size: 2.1em;
+   font-family:'Abel';
    padding:10px;
 }
 h2{
@@ -22,39 +27,53 @@ p{
    margin-top:1em;
    margin-bottom:1em;
    text-indent: 1em;
-   padding:5px
+   padding:5px;
+   line-height:1.4em;
 }
 
 .alina{
-   width:70%;
-   margin-left: auto;
-   margin-right: auto;
-   display:block;
+   padding:2em;
+   width:540px;
+
+   background-color: rgba(255,255,255,.9);
+   border-radius: 10px;
+
+
 }
 .quote{
    font-style: italic;
-   font-size:1.1em;
+   font-size:1em;
 }
 .quotebg{
-   background-color:#F4EBDD;
+   background-color:white;
    padding:15px;
    margin-bottom: 9px;
 }
 .heading{
    margin:1em 0 1em 0;
-   font-size: 1.3em;
-   padding:15px;
+   font-size: 1.1em;
+   padding:12px;
    background-color: #2c2c2c;
    border-radius: 15px;
    color:white;
 }
 a{
-   color:black;
+   color:#89837B;
    text-decoration: none;
    padding:5px;
 }
 a:hover{
-   background-color:#F4EBDD;
-   transition: .7s;
+   color:#CDC3B5;
+   font-style:italic;
+   transition: .5s;
 
+}
+
+@media screen and (max-width:766px){
+   .alina{
+      width:90%;
+      margin-left: auto;
+      margin-right:auto;
+      left:0;
+   }
 }
