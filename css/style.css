@@ -60,3 +60,7 @@ img {
 .reviews{
    clear: left;
 }
+.contain {
+   display: flex;
+   justify-content: space-between;
+}
