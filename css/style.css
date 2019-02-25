@@ -21,12 +21,16 @@ h1 {
 
 h2 {
    font-size: 16px;
+   margin: 15px;
 }
 p {
    font-size: 12px;
 }
 #title {
    font-size: 22px;
+}
+#quote {
+   font-style: italic;
 }
 li {
    list-style-type: decimal;
