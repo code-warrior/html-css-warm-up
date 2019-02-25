@@ -1,0 +1,63 @@
+:root {
+  /*Root Style*/
+  --root-font-size: 16px;
+  --main-bg-color: navy;
+
+  /*Title Fonts*/
+  --title-font-family: "Alfa Slab One", cursive;
+  --title-font-size: 70px;
+  --main-txt-color: white;
+}
+
+body {
+  background: var(--main-bg-color);
+  color: var(--main-txt-color);
+  font-size: var(--root-font-size);
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+header {
+  position: fixed;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+li {
+  list-style-type: none;
+}
+
+.inner-container {
+  width: 60%;
+  margin: 0px auto;
+}
+
+/*Home Section */
+#home {
+  background-color: #444;
+}
+
+h1,
+h1 span {
+  font-family: var(--title-font-family);
+  font-size: var(--title-font-size);
+  transition: 300ms ease-in;
+  -webkit-transition: 1s * ease-in;
+}
+
+#home h2 {
+  font-family: var(--title-font-family);
+  font-size: var(--title-font-size);
+  width: 60%;
+}
+
+#home figcaption {
+  font-family: "Alfa Slab One", cursive;
+  font-size: var(--title-font-size);
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
