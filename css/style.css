@@ -1,0 +1,22 @@
+:root {
+   --color--background: #f2d7c8;
+   --color--text: #222;
+   --font: 'Avenir';
+}
+
+body {
+   background: var(--color--background);
+   color: var(--color--text);
+   font-family: var(--font);
+}
+
+h1 {
+   font-size: 20px
+}
+
+h2 {
+   font-size: 16px;
+}
+p {
+   font-size: 12px;
+}
