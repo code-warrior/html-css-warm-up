@@ -43,6 +43,9 @@ li {
 }
 #artists {
    padding-left: 20px;
+   list-style: disc;
+   list-style-position: inside;
+   font-style: italic;
 }
 
 img {
