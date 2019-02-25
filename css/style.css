@@ -23,6 +23,10 @@ p {
 #title {
    font-size: 22px;
 }
-ol {
+li {
    list-style-type: decimal;
+   margin: 3px;
+}
+#artists {
+   padding-left: 20px;
 }
