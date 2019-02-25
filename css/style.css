@@ -47,3 +47,6 @@ li {
 img {
    float: left;
 }
+.reviews{
+   clear: left;
+}
