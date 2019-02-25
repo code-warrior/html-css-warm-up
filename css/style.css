@@ -47,9 +47,12 @@ li {
 
 img {
    float: left;
+   padding-right: 100px;
+   padding-bottom: 30px;
 }
 .listofsongs{
    text-align: left;
+   float: left;
 }
 .reviews{
    clear: left;
