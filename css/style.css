@@ -8,6 +8,9 @@ body {
    background: var(--color--background);
    color: var(--color--text);
    font-family: var(--font);
+   text-align: center;
+   margin: 40px;
+   padding: 10px;
 }
 
 h1 {
@@ -29,7 +32,7 @@ li {
 }
 
 #songlist {
-   padding-left: 10px;
+   padding-left: 15px;
 }
 #artists {
    padding-left: 20px;
