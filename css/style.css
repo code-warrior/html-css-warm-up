@@ -5,7 +5,7 @@
 
   /*Title Fonts*/
   --title-font-family: "Alfa Slab One", cursive;
-  --title-font-size: 50px;
+  --title-font-size: 60px;
   --main-txt-color: #dedede;
 }
 
@@ -28,6 +28,11 @@ section {
   width: 100%;
   height: auto;
   min-height: 100vh;
+  display: flex;
+}
+p, li {
+  line-height: 1.7rem;
+  font-size: var(--root-font-size);
 }
 
 li {
@@ -37,8 +42,9 @@ p::first-letter {
   font-size: 40px;
 }
 .inner-container {
-  width: 60%;
+  width: 65%;
   margin: 0px auto;
+  display: flex;
 }
 
 h1 {
@@ -56,6 +62,16 @@ h1 span {
 h1 div {
   display: block;
 }
+h3{
+  font-family: var(--title-font-family);
+  font-size: 6rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  display: block;
+  margin: 0 auto;
+  width: auto;
+}
 img {
   width: 100%;
 }
@@ -66,15 +82,14 @@ img {
  */
 
 #home {
-  --home-bg-color: #444;
+  --home-bg-color: #000;
   --home-title-ffamily: helvetica;
-  --home-title-fsize: 4rem;
+  --home-title-fsize: 3rem;
 
   --home-p-fsize: 1.1rem;
 }
 #home {
   background-color: var(--home-bg-color);
-  display: flex;
   align-items: center;
 }
 #home .inner-container {
@@ -85,10 +100,9 @@ img {
 }
 
 #home h2 {
-  font-family: var(--home-title-ffamily);
-  font-size: var(--home-title-fsize);
-  display: block;
   margin: 0 0 50px 0;
+  font-family:  var( --home-title-ffamily);
+  font-size: var(--home-title-fsize);
 }
 
 #home figcaption {
@@ -103,11 +117,7 @@ img {
 #home #info {
   margin-bottom: 50px;
 }
-#home #info p,
-#home #info li {
-  line-height: 1.7rem;
-  font-size: var(--home-p-fsize);
-}
+
 
 #home li {
   display: flex;
@@ -121,6 +131,7 @@ img {
 
 #home article {
   width: 600px;
+  margin-top: 160px;
 }
 #artists {
   display: flex;
@@ -139,14 +150,47 @@ img {
   margin-top: 190px;
 }
 
-/*Media Queries*/
+/*
+*
+* Wildlife Analysis Section
+*
+*/
 
-@media (max-width: 1700px) {
-  #artists figcaption {
-    margin: -65px 0 0 0px;
-  }
+#wildlife-analysis{
+  background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(7,0,40,1) 21%, rgba(9,0,45,1) 35%, rgba(81,18,79,0.99) 77%, rgba(168,77,118,0.98) 92%, rgba(255,135,117,0.98) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(7,0,40,1) 21%,rgba(9,0,45,1) 35%,rgba(81,18,79,0.99) 77%,rgba(168,77,118,0.98) 92%,rgba(255,135,117,0.98) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(7,0,40,1) 21%,rgba(9,0,45,1) 35%,rgba(81,18,79,0.99) 77%,rgba(168,77,118,0.98) 92%,rgba(255,135,117,0.98) 100%);
+  align-content: center;
+  position: relative;
+
+}
+#wildlife-analysis .inner-container{
+  align-items: center;
 }
 
+#wildlife-analysis p{
+  column-count: 2;
+  margin-top: 100px;
+}
+#wildlife-analysis article{
+  display: flex;
+  flex-direction: column;
+}
+
+#wildlife-analysis figure{
+  position: absolute;
+  width: 100%;
+}
+#stars{
+  top:0;
+  opacity: .2;
+}
+#floor{
+  bottom: -2px;
+  opacity: .9;
+}
+
+/*Media Queries*/
 @media (max-width: 1300px) {
   #home article {
     width: 100%;
