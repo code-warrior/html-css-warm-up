@@ -37,7 +37,7 @@ p::first-letter {
   font-size: 40px;
 }
 .inner-container {
-  width: 80%;
+  width: 60%;
   margin: 0px auto;
 }
 
@@ -79,8 +79,8 @@ img {
 }
 #home .inner-container {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -125,7 +125,7 @@ img {
 #artists {
   display: flex;
   justify-content: space-evenly;
-  margin: 0 60px 0 0px;
+  margin: 0 0px 0 60px;
 }
 
 #artists figcaption {
@@ -147,20 +147,16 @@ img {
   }
 }
 
-@media (max-width: 1440px) {
-  #home #info p {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
   #home article {
     width: 100%;
   }
-
+  #home #info p {
+    font-size: 1.1rem;
+  }
   #home .inner-container {
     flex-direction: column;
-    margin: 200px auto;
+    margin: 200px auto 100px;
   }
   #artists figcaption {
     font-size: 3.5rem;
@@ -170,11 +166,26 @@ img {
     margin: 0;
   }
 }
+@media (max-width: 900px) {
+  .inner-container {
+    width: 80%;
+  }
+}
 @media (max-width: 600px) {
+  #artists figure:first-child {
+    margin-top: 0;
+  }
+  #home .inner-container {
+    margin: 200px auto 50px;
+  }
   #artists {
     flex-direction: column;
   }
-  #artists figure:first-child {
-    margin: 0;
+  #artists figure {
+    margin: 0 0 150px;
+  }
+
+  .inner-container {
+    width: 80%;
   }
 }
