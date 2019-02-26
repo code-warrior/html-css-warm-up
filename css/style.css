@@ -1,0 +1,102 @@
+/* Global */
+* {
+   padding: 0;
+   margin: 0;
+}
+body {
+   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   background-color: #ECEFF1;
+}
+ul,ol {
+   text-align: left;
+}
+li {
+   margin: 12px;
+}
+p {
+   width: 80%;
+   font-size: 1em;
+   margin: 5px auto;
+}
+
+/* Layout */
+
+.container {
+   width: 90%;
+   margin: auto;
+}
+#title {
+   margin-top: 24px;
+   text-align: center;
+   color: #263238;
+   font-size: 2em;
+}
+/* img */
+.img-container {
+   padding: 36px 0px;
+   width: 60%;
+   overflow: hidden;
+   margin: auto;
+}
+.album-cover {
+   position: relative;
+   width: 100%;
+   transform: scale(1.1);
+   transition: all 200ms ease-out;
+}
+.album-cover:hover {
+   transform: scale(1.0);
+}
+/* main */
+.main {
+   height: 350px;
+}
+.artist {
+   float: left;
+   width: 50%;
+   color: black;
+   text-align: center;
+}
+.tracklist {
+   float: right;
+   width: 50%;
+   color:black;
+   text-align: center;
+}
+.titles {
+   color: #263238;
+   font-size: 1.5em;
+}
+/* fade */
+.fadein {
+   color: #90A4AE;
+   padding-left: 24px;
+   opacity: 0;
+   transition: all 100ms ease-in;
+}
+li:hover > .fadein {
+    opacity: 1;
+}
+/* reviews */
+.reviews {
+   width: 80%;
+   margin: auto;
+}
+
+.reviews > .titles {
+   text-align: center;
+   padding: 10px;
+}
+.review {
+   padding: 24px;
+   text-align: center;
+}
+.link {
+   font-size: 1.2em;
+   text-decoration: none;
+   color: #263238;
+   transition: all 200ms ease-out;
+}
+.link:hover {
+   font-size: 1.4em;
+}
