@@ -307,35 +307,90 @@ img {
 /*
 *   Olson
 */
-#olson{
-  background: linear-gradient(140deg, #977d6c, #848192, #636d93, #3b4769);
+#cotf{
+  background: #afafaf;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
-#olson article{
-  background: linear-gradient(140deg, #cbbfc9, #b9a59a, #9a7c80, rgba(148, 85, 79, .2)),
-  linear-gradient(190deg, #994f4c, #b9a59a, #9a7c80,rgba(53, 50, 78, .9));
-  border-bottom: 3px solid #373651;
-  border-top: 3px solid #cbbfc9;
-  /*border-left: 3px solid #b38f4b;*/
-  border-right: 3px solid #9e5454;
-  border-radius: 30px;
-  box-shadow: 0px -15px 45px #8296cb;
-  padding: 40px;
-  color: #482f2c;
+#cotf h3{
+  -webkit-text-stroke-color: #afafaf;
+  -webkit-text-fill-color: #afafaf;
+  font-weight: 800;
+  color: #afafaf;
+  text-shadow: 0px 0px 10px #b5b5b7, 0px 7px 20px #58585d, 0px 30px 60px #585761, 0px -2px 30px #e8e6d4, 0px -25px 40px #c6c6c6, 0px 0px 40px #a1a1c1;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 50px;
 }
-#olson h3{
-  -webkit-text-stroke-color:  #c9bdc5;
-  -webkit-text-stroke-width: 2px;
-}
-#olson .inner-container{
+#cotf .inner-container{
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+.grad1 {
+  position: absolute;
+  height: 10px;
+  width: 100%;  
+  box-shadow: 0em .2em 40px #fff;
+  opacity: .3;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right,  orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
 }
 
 /*
   Rest
 */
+#rest{
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,1,0) 2%, rgba(3,0,25,0.9) 79%, rgba(3,0,25,1) 88%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,1,0) 2%,rgba(3,0,25,0.9) 79%,rgba(3,0,25,1) 88%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,1,0) 2%,rgba(3,0,25,0.9) 79%,rgba(3,0,25,1) 88%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#030019',GradientType=0 );
+  position: relative;
+}
+#rest article{
+  margin-top: 50px;
+}
+#rest p{
+  padding-bottom: 50px;
+}
+#rest figure{
+  position: absolute;
+  width: 100%;
+}
+#ocean{
+  left: 0;
+  bottom: -5px;
+}
+
+
+/*
+* Cite
+*/
+#cite{
+  min-height: 200px;
+  background: black;
+}
+#cite .inner-container{
+  flex-direction: column;
+  align-items: flex-start;
+}
+#cite h3{
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+#cite a{
+  text-decoration: none;
+  color: #dedede;
+}
+
 
 /*Media Queries*/
 @media (max-width: 1300px) {
