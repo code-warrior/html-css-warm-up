@@ -14,10 +14,7 @@ body {
   color: var(--main-txt-color);
   font-size: var(--root-font-size);
 }
-main {
-  display: grid;
-  grid-template-columns: 1fr;
-}
+
 header nav {
   display: none;
 }
@@ -45,6 +42,7 @@ p::first-letter {
   width: 65%;
   margin: 0px auto;
   display: flex;
+  align-items: center;
 }
 
 h1 {
@@ -68,9 +66,7 @@ h3{
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  display: block;
-  margin: 0 auto;
-  width: auto;
+  text-align: center;
 }
 img {
   width: 100%;
@@ -96,7 +92,6 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
 #home h2 {
@@ -164,9 +159,6 @@ img {
   position: relative;
 
 }
-#wildlife-analysis .inner-container{
-  align-items: center;
-}
 
 #wildlife-analysis p{
   column-count: 2;
@@ -184,11 +176,129 @@ img {
 #stars{
   top:0;
   opacity: .2;
+  pointer-events: none;
 }
 #floor{
-  bottom: -2px;
+  bottom: -5px;
   opacity: .9;
 }
+
+
+/*
+*
+* ROYGBIV
+*/
+
+#roygbiv{
+  position: relative;
+  background: rgb(25,13,12);
+  background: -moz-linear-gradient(top, rgba(25,13,12,1) 44%, rgba(81,39,39,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(25,13,12,1) 44%,rgba(81,39,39,1) 100%);
+  background: linear-gradient(to bottom, rgba(25,13,12,1) 44%,rgba(81,39,39,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#190d0c', endColorstr='#512727',GradientType=0 );
+
+}
+
+.rainbow span{
+  position: absolute;
+  font-family: var(--title-font-family);
+  font-size: 6rem;
+  display: block;
+  margin: 0 auto;
+  width: auto;
+}
+.rainbow span:nth-child(1){
+  -webkit-text-stroke-color: red;
+  left: 0em;
+}
+.rainbow span:nth-child(2){
+  -webkit-text-stroke-color: orange;
+  left: .9em;
+}
+.rainbow span:nth-child(3){
+  -webkit-text-stroke-color: yellow;
+  left: 1.6em;
+}
+.rainbow span:nth-child(4){
+  -webkit-text-stroke-color: green;
+  left: 2.3em;
+}
+.rainbow span:nth-child(5){
+  -webkit-text-stroke-color: blue;
+  left: 3.0em;
+}
+.rainbow span:nth-child(6){
+  -webkit-text-stroke-color: indigo;
+  left: 3.7em;
+}
+.rainbow span:nth-child(7){
+  -webkit-text-stroke-color: violet;
+  left: 4.1em;
+}
+
+#roygbiv h3{
+  position: absolute;
+}
+
+.transition{
+  position: absolute;
+}
+
+.title-container{
+  width: 60%;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+
+/*
+*
+*   Aquarius
+*
+*/
+
+#aquarius{
+  background: white;
+}
+.rec{
+  width:100%;
+  min-height: 33.3vh;
+  height: auto;
+}
+.rec{
+  background: rgb(255,233,174);
+  background: -moz-linear-gradient(left, rgba(255,233,174,1) 0%, rgba(255,101,27,1) 49%, rgba(255,233,174,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(255,233,174,1) 0%,rgba(255,101,27,1) 49%,rgba(255,233,174,1) 100%);
+  background: linear-gradient(to right, rgba(255,233,174,1) 0%,rgba(255,101,27,1) 49%,rgba(255,233,174,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe9ae', endColorstr='#ffe9ae',GradientType=1 );
+}
+.rec:nth-child(2){
+  background: rgb(255,101,27);
+  background: -moz-linear-gradient(left, rgba(255,101,27,1) 3%, rgba(255,233,174,1) 53%, rgba(255,101,27,1) 99%);
+  background: -webkit-linear-gradient(left, rgba(255,101,27,1) 3%,rgba(255,233,174,1) 53%,rgba(255,101,27,1) 99%);
+  background: linear-gradient(to right, rgba(255,101,27,1) 3%,rgba(255,233,174,1) 53%,rgba(255,101,27,1) 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff651b', endColorstr='#ff651b',GradientType=1 );
+}
+.rec h3{
+  margin-top: -28px;
+}
+.other-container{
+  display: flex;
+  flex-direction: column;
+}
+.core{
+  border-radius: 100%;
+  width: 50%;
+  height: 600px;
+  background: red;
+  position: absolute;
+}
+.rec article{
+  position: relative;
+}
+
 
 /*Media Queries*/
 @media (max-width: 1300px) {
@@ -200,6 +310,7 @@ img {
   }
   #home .inner-container {
     flex-direction: column;
+    
     margin: 200px auto 100px;
   }
   #artists figcaption {
@@ -231,5 +342,14 @@ img {
 
   .inner-container {
     width: 80%;
+  }
+  h3{
+    font-size: 4rem;
+  }
+  #artists figcaption{
+    margin: 0;
+  }
+  #wildlife-analysis p{
+    column-count: 1;
   }
 }
