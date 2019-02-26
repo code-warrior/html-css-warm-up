@@ -41,7 +41,7 @@ li {
 #songlist {
    padding-left: 15px;
 }
-#artists {
+.artists {
    padding-left: 20px;
    list-style: disc;
    list-style-position: inside;
