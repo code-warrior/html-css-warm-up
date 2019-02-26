@@ -245,7 +245,7 @@ img {
 }
 
 .title-container{
-  width: 60%;
+  width: auto;
   height: 100px;
   margin: 0 auto;
   position: relative;
@@ -269,9 +269,9 @@ img {
 }
 .rec{
   background: rgb(255,233,174);
-  background: -moz-linear-gradient(left, rgba(255,233,174,1) 0%, rgba(255,101,27,1) 49%, rgba(255,233,174,1) 100%);
-  background: -webkit-linear-gradient(left, rgba(255,233,174,1) 0%,rgba(255,101,27,1) 49%,rgba(255,233,174,1) 100%);
-  background: linear-gradient(to right, rgba(255,233,174,1) 0%,rgba(255,101,27,1) 49%,rgba(255,233,174,1) 100%);
+  background: -moz-linear-gradient(left, rgba(255,233,174,1) 0%, rgba(255,101,27,1) 30%, rgba(255,80,0,1) 48%, rgba(255,101,27,1) 65%, rgba(255,233,174,1) 95%, rgba(255,233,174,1) 95%);
+  background: -webkit-linear-gradient(left, rgba(255,233,174,1) 0%,rgba(255,101,27,1) 30%,rgba(255,80,0,1) 48%,rgba(255,101,27,1) 65%,rgba(255,233,174,1) 95%,rgba(255,233,174,1) 95%);
+  background: linear-gradient(to right, rgba(255,233,174,1) 0%,rgba(255,101,27,1) 30%,rgba(255,80,0,1) 48%,rgba(255,101,27,1) 65%,rgba(255,233,174,1) 95%,rgba(255,233,174,1) 95%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe9ae', endColorstr='#ffe9ae',GradientType=1 );
 }
 .rec:nth-child(2){
@@ -282,23 +282,47 @@ img {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff651b', endColorstr='#ff651b',GradientType=1 );
 }
 .rec h3{
-  margin-top: -28px;
+ 
 }
 .other-container{
   display: flex;
   flex-direction: column;
 }
 .core{
+  display: none;
   border-radius: 100%;
-  width: 50%;
+  width: 600px;
   height: 600px;
-  background: red;
+  background: #ff5400;
   position: absolute;
+  margin: -230px;
+}
+.core-container{
+  margin: 0 auto;
 }
 .rec article{
-  position: relative;
+  padding: 30px;
 }
 
+/*
+*   Olson
+*/
+#olson{
+  background: #dedede;
+  color: #333;
+}
+#olson h3{
+  -webkit-text-stroke-color: #ff6db7;
+}
+#olson .inner-container{
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*
+  Rest
+*/
 
 /*Media Queries*/
 @media (max-width: 1300px) {
@@ -343,7 +367,7 @@ img {
   .inner-container {
     width: 80%;
   }
-  h3{
+  h3, .rainbow span{
     font-size: 4rem;
   }
   #artists figcaption{
