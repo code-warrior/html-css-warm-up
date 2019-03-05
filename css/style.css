@@ -1,0 +1,64 @@
+body {
+	background: #242423;
+	color: #f5cb5c;
+	font-family: 'PT Sans', sans-serif;
+  padding-top: 55px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+	
+
+a {
+    color: #e8eddf;
+	
+}
+
+
+a:hover {
+    color: #cfdbd5;
+	text-decoration-style: dashed;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+blockquote{
+  font-size: 1.4em;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #e8eddf;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #f5cb5c;
+  line-height:1.6;
+  position: relative;
+  background:#333533;
+}
+
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#f5cb5c;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display:block;
+  color:#f5cb5c;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+ 
+#list2 { width:450px; }
+#list2 ol { font-style:italic; font-family:Georgia, Times, serif; font-size:24px; color:#f5cb5c;  }
+#list2 ol li { }
+#list2 ol li p { padding:8px; font-style:normal; font-family:'PT Sans', sans-serif; font-size:14.5px; color:#e8eddf; border-left: 1px solid #f5cb5c; }
+#list2 ol li p em { display:block; }
