@@ -19,6 +19,11 @@ a {
 	
 }
 
+ol {
+	color: #f5cb5c;
+	font-family: 'PT Sans', sans-serif;
+}
+
 
 a:hover {
     color: #cfdbd5;
