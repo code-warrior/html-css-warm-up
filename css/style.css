@@ -1,13 +1,16 @@
-reset.css
-
 body {
-	background: #242423;
+	background-color: #242423;
+}
+
+h2 {
+	color: #f5cb5c;
+	font-family: 'PT Sans', sans-serif;
+	
 }
 
 p {
 	color: #f5cb5c;
 	font-family: 'PT Sans', sans-serif;
-  padding-top: 55px; /* 60px to make the container go all the way to the bottom of the topbar */
 }
 	
 
