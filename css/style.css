@@ -70,3 +70,10 @@ blockquote span{
 #list2 ol li { }
 #list2 ol li p { padding:8px; font-style:normal; font-family:'PT Sans', sans-serif; font-size:14.5px; color:#e8eddf; border-left: 1px solid #f5cb5c; }
 #list2 ol li p em { display:block; }
+
+.center-div
+{
+     margin: 0 auto;
+     width: 800px; 
+}
+
